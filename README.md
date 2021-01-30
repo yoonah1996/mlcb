@@ -1,3 +1,12 @@
+# 나의 작고 귀여운 블로그 만들기
+# (예정) TodoList기능 추가
+
+# @material-ui 사용
+# typescript 사용
+# redux 사용
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
