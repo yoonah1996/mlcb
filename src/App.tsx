@@ -3,28 +3,31 @@ import {makeStyles} from '@material-ui/styles';
 
 const useStyles = makeStyles({
   root:{
-    height: "100vh",
+    height: "90vh",
+    border: "1px solid black",
+    position: "static",
+    overflow: "hidden",
   },
   heads: {
-    backgroundColor: "green",
+    backgroundColor: "",
     height: "20vh",
-  },
-  unders: {
-    backgroundColor: "blue",
-    height: "80vh",
-    // width: "100vw",
+
   },
   sides: {
-    backgroundColor:"red",
+    backgroundColor:"",
     height: "80vh",
     width: "100vw",
-    float: "left"
+    float: "left",
+    textOverflow: "hidden",
+    overflow:"auto",
   },
   mains: {
-    backgroundColor:"yellow",
+    backgroundColor:"",
     height: "80vh",
     float: "right",
-    width: "80vw",
+    width: "85vw",
+    overflow:"auto",
+
   },
 });
 
@@ -35,12 +38,11 @@ function App() {
       <div className={classes.heads}>
         My Little Cute Blog
       </div>
-      <div className={classes.unders}>
+      <div>
         <div className={classes.sides}>
-          사이드 만드는 중
-        <div className={classes.mains}>
-          내용 적는 곳
-        </div>
+          사이드
+          <div className={classes.mains}>
+          </div>
         </div>
       </div>
     </div>
